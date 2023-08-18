@@ -39,7 +39,7 @@ const SignUpForm = () => {
       setCrUserLoggedIn(formdata.firstName)
       toast.success("Account Created");
       setIsLoggedIn(true);
-      navigate("/dashboard");
+      navigate("/Study_Notion_App/dashboard");
     }
 
   }

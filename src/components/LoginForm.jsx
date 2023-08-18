@@ -19,18 +19,17 @@ const LoginForm = () => {
 
   // login function
   function login(formdata) {
-    loginData.some((data) => data.email === formdata.email && data.password === formdata.password) ? (
+    loginData.some(
+      (data) =>
+        data.email === formdata.email && data.password === formdata.password
+    ) ? (
       <div>
         {toast.success("Logged In")}
-        {navigate("/")}
+        {navigate("/Study_Notion_App")}
         {setIsLoggedIn(true)}
       </div>
     ) : (
-      <div>
-        {
-          toast.error("Not LoggedIn Pls SignUp")
-        }
-      </div>
+      <div>{toast.error("Not LoggedIn Pls SignUp")}</div>
     );
   }
 
