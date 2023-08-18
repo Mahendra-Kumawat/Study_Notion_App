@@ -9,13 +9,13 @@ const Manu = (props) => {
       <nav className="flex justify-between py-4 items-center">
         <ul className="md:flex gap-5 text-white hidden">
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link to={"/Study_Notion_App"}>Home</Link>
           </li>
           <li>
-            <Link to={"/"}>About</Link>
+            <Link to={"/Study_Notion_App"}>About</Link>
           </li>
           <li>
-            <Link to={"/"}>Contact</Link>
+            <Link to={"/Study_Notion_App"}>Contact</Link>
           </li>
         </ul>
 
@@ -28,14 +28,14 @@ const Manu = (props) => {
             </Link>
           )}
           {!isloggedIn && (
-            <Link to={"/signup"}>
+            <Link to={"/Study_Notion_App/signup"}>
               <button className="ring-1 px-4 py-2 rounded-md  bg-slate-800">
                 Sign Up
               </button>
             </Link>
           )}
           {isloggedIn && (
-            <Link to={"/"}>
+            <Link to={"/Study_Notion_App"}>
               <button
                 className="ring-1 px-4 py-2 rounded-md  bg-slate-800"
                 onClick={() => {
@@ -47,7 +47,7 @@ const Manu = (props) => {
             </Link>
           )}
           {isloggedIn && (
-            <Link to={"/dashboard"}>
+            <Link to={"/Study_Notion_App/dashboard"}>
               <button className="ring-1 px-4 py-2 rounded-md  bg-slate-800">
                 Dashboard
               </button>

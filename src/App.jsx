@@ -12,13 +12,13 @@ function App() {
 
   return (
     <div className="bg-slate-950 min-h-screen px-1 md:px-8">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/Study_Notion_App" element={<Home />}></Route>
+        <Route path="/Study_Notion_App/login" element={<Login />}></Route>
+        <Route path="/Study_Notion_App/signup" element={<SignUp />}></Route>
+        <Route path="/Study_Notion_App/profile" element={<Profile />}></Route>
+        <Route path="/Study_Notion_App/dashboard" element={<Dashboard />}></Route>
       </Routes>
     </div>
   );
